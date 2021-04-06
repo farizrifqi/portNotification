@@ -1,3 +1,8 @@
+/*
+Thanks To:
+- Wahyu Arif Purnomo
+- Setya Mickala II
+*/
 const fetch = require('node-fetch')
 const TelegramBot = require('node-telegram-bot-api');
 const token = '675485146:AAHuyOpGg0QLE33IP5gaBXN8Fx_WKT2pTww';
@@ -24,4 +29,4 @@ setInterval(async () => {
             }
         }
     })
-}, 3600000)
+}, 1800000)
