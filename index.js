@@ -12,6 +12,7 @@ const listAddress = ['zil1zra5yhlgqchr3fn4kj7gaam57h2x6lgrjzmm62', 'zil1dpjypt0m
 // setInterval( () => {
 //     checkTrx()
 // }, 1200000)
+bot.sendMessage("-1001285503524", "bot siap")
 bot.onText(/\/check/, (msg) => {
     checkTrx(msg)
 })
