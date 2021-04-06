@@ -41,7 +41,7 @@ async function checkTrx(m){
                             return;
                         }else{
                             await bot.deleteMessage(mg.chat.id, mg.message_id).then(async (me) => {
-                                await bot.sendMessage(mg.chat.id, `[${addr}]\n\n${trx['message']}`, {
+                                await bot.sendMessage(mg.chat.id, `[ ${addr} ]\n\n${trx['message']}`, {
                                     "reply_markup":{
                                         "keyboard": [["/check"]]
                                     }
@@ -51,6 +51,12 @@ async function checkTrx(m){
                         }
                     })
                 }
+            }else{
+                await bot.sendMessage(mg.chat.id, "Error, try again", {
+                    "reply_markup":{
+                        "keyboard": [["/check"]]
+                    }
+                })
             }
         })
     })
