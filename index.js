@@ -72,6 +72,12 @@ bot.onText(/\/check/, async (msg) => {
 	})
 	return;
 })
+bot.onText(/\/start/, async (msg) => {
+	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual")
+})
+bot.onText(/\/help/, async (msg) => {
+	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual")
+})
 bot.onText(/\/list/, async (msg) => {
 	let sendMsg = 'All of your list:\n'
     trxData.forEach(async addr => {
