@@ -85,7 +85,7 @@ bot.onText(/\/list/, async (msg) => {
 			if(addr.aliases){
 				sendMsg += `[ ${addr.address} ]\nAliases: ${addr.aliases}\nTotal:${addr.count}\n`
 			}else{
-				sendMsg += `${addr.address}\n`
+				sendMsg += `[ ${addr.address} ]\nTotal:${addr.count}\n`
 			}
 		}
 	})
