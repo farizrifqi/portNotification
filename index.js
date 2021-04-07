@@ -39,6 +39,16 @@ const backupData =
 
 if (backupData.length > 0){
 	backupData.forEach(async a => {
+		let result = await getData(a.address)
+		let resultJson = await result.json()
+		if(resultJson['docs'].length > 0){
+			resultJson['docs'].forEach(trx => {
+				if(addr.count < resultJson['docs'].length){
+					addr.count += 1
+					//bot.sendMessage(addr.chat_id, `[ ${addr.address} ] => GET\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
+				}
+			})
+		}
 		let addressConstructor = {
 			address: a['name'],
 			count: a['value']['count'],
@@ -83,9 +93,9 @@ bot.onText(/\/list/, async (msg) => {
     trxData.forEach(async addr => {
 		if(msg.chat.id == addr.chat_id){
 			if(addr.aliases){
-				sendMsg += `[ ${addr.address} ]\nAliases: ${addr.aliases}\nTotal:${addr.count}\n`
+				sendMsg += `[ ${addr.address} ]\nAliases: ${addr.aliases}\nTotal: ${addr.count}\n`
 			}else{
-				sendMsg += `[ ${addr.address} ]\nTotal:${addr.count}\n`
+				sendMsg += `[ ${addr.address} ]\nTotal: ${addr.count}\n`
 			}
 		}
 	})
