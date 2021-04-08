@@ -259,6 +259,7 @@ const backupData = [
 	  "value": {
 		"address": "zil1plyfw8sqxmrr5auj0ygverx3vrzwuzp2epwx8v",
 		"count": 0,
+		"owner": "xmbyrx",
 		"chat_id": 1239581842,
 		"aliases": null
 	  }
@@ -348,6 +349,7 @@ const backupData = [
 	  "value": {
 		"address": "zil182s6czzdp3aa03jedf9ym5wydmrmm8q7e339ls",
 		"count": 0,
+		"owner": "xmbyrx",
 		"chat_id": 1239581842,
 		"aliases": null
 	  }
@@ -397,6 +399,7 @@ const backupData = [
 	  "value": {
 		"address": "zil16d20drju9zhn0c3ypgf7ryvqaslakjgy77yfxs",
 		"count": 0,
+		"owner": "xmbyrx",
 		"chat_id": 1239581842,
 		"aliases": null
 	  }
@@ -446,6 +449,7 @@ const backupData = [
 	  "value": {
 		"address": "zil1zkppqupdjjn2kgfqxgxpx8957su76kdwfr4sfv",
 		"count": 1,
+		"owner": "xmbyrx",
 		"chat_id": 1239581842,
 		"aliases": null
 	  }
@@ -515,6 +519,7 @@ const backupData = [
 	  "value": {
 		"address": "zil1ly5r0t8zf37ujj0l7ca77ygz482g06rddntaxr",
 		"count": 1,
+		"owner": "xmbyrx",
 		"chat_id": 1239581842,
 		"aliases": null
 	  }
