@@ -5,36 +5,6 @@ const bot = new TelegramBot(token, {polling: true});
 const trxData = new Map()
 const backupData = [
 	{
-	  "name": "zil1rqwtpwyjxyesmu2q9ar7gtldxhtmp6ygp9wuun",
-	  "value": {
-		"address": "zil1rqwtpwyjxyesmu2q9ar7gtldxhtmp6ygp9wuun",
-		"count": 1,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil13564xcskh6waqg2gxnsmhvw3eh737vysalw7t2",
-	  "value": {
-		"address": "zil13564xcskh6waqg2gxnsmhvw3eh737vysalw7t2",
-		"count": 0,
-		"owner": "modilaakbari",
-		"chat_id": 703469861,
-		"aliases": "modila2"
-	  }
-	},
-	{
-	  "name": "zil1qgqt5zaf7y9kpyu0z5f3ecwh7mtvf5jwch0fug",
-	  "value": {
-		"address": "zil1qgqt5zaf7y9kpyu0z5f3ecwh7mtvf5jwch0fug",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": null
-	  }
-	},
-	{
 	  "name": "zil1zra5yhlgqchr3fn4kj7gaam57h2x6lgrjzmm62",
 	  "value": {
 		"address": "zil1zra5yhlgqchr3fn4kj7gaam57h2x6lgrjzmm62",
@@ -45,13 +15,13 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil19gpsvsjlprg430vqw0sm0ul7gyk7nxr3u5x7xv",
+	  "name": "zil1plyfw8sqxmrr5auj0ygverx3vrzwuzp2epwx8v",
 	  "value": {
-		"address": "zil19gpsvsjlprg430vqw0sm0ul7gyk7nxr3u5x7xv",
-		"count": 1,
-		"owner": "modilaakbari",
-		"chat_id": 703469861,
-		"aliases": "modila1"
+		"address": "zil1plyfw8sqxmrr5auj0ygverx3vrzwuzp2epwx8v",
+		"count": 0,
+		"owner": "xmbyrx",
+		"chat_id": 1239581842,
+		"aliases": null
 	  }
 	},
 	{
@@ -75,53 +45,53 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil159yvk7q55vrt92h7ylm63rxxxhczeea3hggs4s",
+	  "name": "zil168r2fumnvkzcvme953r4yd7g0nwgp7vafeg5ng",
 	  "value": {
-		"address": "zil159yvk7q55vrt92h7ylm63rxxxhczeea3hggs4s",
-		"count": 1,
+		"address": "zil168r2fumnvkzcvme953r4yd7g0nwgp7vafeg5ng",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": "kuwait"
+	  }
+	},
+	{
+	  "name": "zil1n0y7yqvm7cpeq63c0ln3uf7vvt063tkyq7ck3w",
+	  "value": {
+		"address": "zil1n0y7yqvm7cpeq63c0ln3uf7vvt063tkyq7ck3w",
+		"count": 0,
 		"owner": "ichsn",
 		"chat_id": 749040222,
 		"aliases": null
 	  }
 	},
 	{
-	  "name": "zil1e94fh8qdw9zkhnrps0mt4g5fyfad36d6hu5h06",
+	  "name": "zil1qgqt5zaf7y9kpyu0z5f3ecwh7mtvf5jwch0fug",
 	  "value": {
-		"address": "zil1e94fh8qdw9zkhnrps0mt4g5fyfad36d6hu5h06",
+		"address": "zil1qgqt5zaf7y9kpyu0z5f3ecwh7mtvf5jwch0fug",
 		"count": 0,
-		"owner": "modilaakbari",
-		"chat_id": 703469861,
-		"aliases": "modila"
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": null
 	  }
 	},
 	{
-	  "name": "zil18cpyatln6ctkkwkgp48s2770ns30flqxqa4dx8",
+	  "name": "zil13564xcskh6waqg2gxnsmhvw3eh737vysalw7t2",
 	  "value": {
-		"address": "zil18cpyatln6ctkkwkgp48s2770ns30flqxqa4dx8",
+		"address": "zil13564xcskh6waqg2gxnsmhvw3eh737vysalw7t2",
 		"count": 1,
 		"owner": "modilaakbari",
 		"chat_id": 703469861,
-		"aliases": "modila3"
+		"aliases": "modila2"
 	  }
 	},
 	{
-	  "name": "zil13kkkqp6f98vgkhmq7cuw6gtcsl8yyumgpwmzha",
+	  "name": "zil19gpsvsjlprg430vqw0sm0ul7gyk7nxr3u5x7xv",
 	  "value": {
-		"address": "zil13kkkqp6f98vgkhmq7cuw6gtcsl8yyumgpwmzha",
-		"count": 0,
-		"owner": "claudiopf",
-		"chat_id": 1695335685,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg",
-	  "value": {
-		"address": "zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg",
-		"count": 0,
-		"owner": "claudiopf",
-		"chat_id": 1695335685,
-		"aliases": null
+		"address": "zil19gpsvsjlprg430vqw0sm0ul7gyk7nxr3u5x7xv",
+		"count": 2,
+		"owner": "modilaakbari",
+		"chat_id": 703469861,
+		"aliases": "modila1"
 	  }
 	},
 	{
@@ -135,43 +105,93 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1w29uym5j3typchghgh3xryasqxsdjq55mheja7",
+	  "name": "zil1dpjypt0m0t3hdvw7mhe9a6vdtmgcys9nlh54gg",
 	  "value": {
-		"address": "zil1w29uym5j3typchghgh3xryasqxsdjq55mheja7",
+		"address": "zil1dpjypt0m0t3hdvw7mhe9a6vdtmgcys9nlh54gg",
 		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": "ANDROID"
+	  }
+	},
+	{
+	  "name": "zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg",
+	  "value": {
+		"address": "zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg",
+		"count": 0,
+		"owner": "claudiopf",
+		"chat_id": 1695335685,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil18cpyatln6ctkkwkgp48s2770ns30flqxqa4dx8",
+	  "value": {
+		"address": "zil18cpyatln6ctkkwkgp48s2770ns30flqxqa4dx8",
+		"count": 2,
+		"owner": "modilaakbari",
+		"chat_id": 703469861,
+		"aliases": "modila3"
+	  }
+	},
+	{
+	  "name": "zil1walhhexyej3gkp7mewtcsfsul55e2v07jjmq7q",
+	  "value": {
+		"address": "zil1walhhexyej3gkp7mewtcsfsul55e2v07jjmq7q",
+		"count": 0,
+		"owner": "claudiopf",
+		"chat_id": 1695335685,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil159yvk7q55vrt92h7ylm63rxxxhczeea3hggs4s",
+	  "value": {
+		"address": "zil159yvk7q55vrt92h7ylm63rxxxhczeea3hggs4s",
+		"count": 1,
 		"owner": "ichsn",
 		"chat_id": 749040222,
 		"aliases": null
 	  }
 	},
 	{
-	  "name": "zil168r2fumnvkzcvme953r4yd7g0nwgp7vafeg5ng",
+	  "name": "zil1w29uym5j3typchghgh3xryasqxsdjq55mheja7",
 	  "value": {
-		"address": "zil168r2fumnvkzcvme953r4yd7g0nwgp7vafeg5ng",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": "kuwait"
+		"address": "zil1w29uym5j3typchghgh3xryasqxsdjq55mheja7",
+		"count": 1,
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": null
 	  }
 	},
 	{
-	  "name": "zil1anumqqegpr32fx0sh87v80xh4dgndtp2jhzm9g",
+	  "name": "zil1rqwtpwyjxyesmu2q9ar7gtldxhtmp6ygp9wuun",
 	  "value": {
-		"address": "zil1anumqqegpr32fx0sh87v80xh4dgndtp2jhzm9g",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": "SG2"
+		"address": "zil1rqwtpwyjxyesmu2q9ar7gtldxhtmp6ygp9wuun",
+		"count": 1,
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": null
 	  }
 	},
 	{
-	  "name": "zil1gw64cfz96whjuee3g2yjstk6ghjxjzdaz9mdz5k",
+	  "name": "zil1e94fh8qdw9zkhnrps0mt4g5fyfad36d6hu5h06",
 	  "value": {
-		"address": "zil1gw64cfz96whjuee3g2yjstk6ghjxjzdaz9mdz5k",
+		"address": "zil1e94fh8qdw9zkhnrps0mt4g5fyfad36d6hu5h06",
+		"count": 1,
+		"owner": "modilaakbari",
+		"chat_id": 703469861,
+		"aliases": "modila"
+	  }
+	},
+	{
+	  "name": "zil1vh6tln9xjc54gaa8frx6cpuje3v3qvutu3sj9l",
+	  "value": {
+		"address": "zil1vh6tln9xjc54gaa8frx6cpuje3v3qvutu3sj9l",
 		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": "asdfasdf"
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu4"
 	  }
 	},
 	{
@@ -195,42 +215,12 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1dpjypt0m0t3hdvw7mhe9a6vdtmgcys9nlh54gg",
+	  "name": "zil13kkkqp6f98vgkhmq7cuw6gtcsl8yyumgpwmzha",
 	  "value": {
-		"address": "zil1dpjypt0m0t3hdvw7mhe9a6vdtmgcys9nlh54gg",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": "ANDROID"
-	  }
-	},
-	{
-	  "name": "zil1walhhexyej3gkp7mewtcsfsul55e2v07jjmq7q",
-	  "value": {
-		"address": "zil1walhhexyej3gkp7mewtcsfsul55e2v07jjmq7q",
+		"address": "zil13kkkqp6f98vgkhmq7cuw6gtcsl8yyumgpwmzha",
 		"count": 0,
 		"owner": "claudiopf",
 		"chat_id": 1695335685,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1vh6tln9xjc54gaa8frx6cpuje3v3qvutu3sj9l",
-	  "value": {
-		"address": "zil1vh6tln9xjc54gaa8frx6cpuje3v3qvutu3sj9l",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": "emu4"
-	  }
-	},
-	{
-	  "name": "zil1cevtkhh8rgty0ljsxt47hvrpf6t7nhg3k287r6",
-	  "value": {
-		"address": "zil1cevtkhh8rgty0ljsxt47hvrpf6t7nhg3k287r6",
-		"count": 0,
-		"owner": "wkrisdiyanto",
-		"chat_id": 795965625,
 		"aliases": null
 	  }
 	},
@@ -255,43 +245,13 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1plyfw8sqxmrr5auj0ygverx3vrzwuzp2epwx8v",
+	  "name": "zil1gw64cfz96whjuee3g2yjstk6ghjxjzdaz9mdz5k",
 	  "value": {
-		"address": "zil1plyfw8sqxmrr5auj0ygverx3vrzwuzp2epwx8v",
-		"count": 0,
-		"owner": "xmbyrx",
-		"chat_id": 1239581842,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1n0y7yqvm7cpeq63c0ln3uf7vvt063tkyq7ck3w",
-	  "value": {
-		"address": "zil1n0y7yqvm7cpeq63c0ln3uf7vvt063tkyq7ck3w",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil165vpnsjv60d7x3gtzcc2u9yl0gfllraygdl7ry",
-	  "value": {
-		"address": "zil165vpnsjv60d7x3gtzcc2u9yl0gfllraygdl7ry",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1yjc66zl7ltnjj6l4j08r9ck4k7wgmkwy2qjsm7",
-	  "value": {
-		"address": "zil1yjc66zl7ltnjj6l4j08r9ck4k7wgmkwy2qjsm7",
+		"address": "zil1gw64cfz96whjuee3g2yjstk6ghjxjzdaz9mdz5k",
 		"count": 0,
 		"owner": "farizra",
 		"chat_id": 615522910,
-		"aliases": "indo"
+		"aliases": "asdfasdf"
 	  }
 	},
 	{
@@ -301,106 +261,6 @@ const backupData = [
 		"count": 0,
 		"owner": "claudiopf",
 		"chat_id": 1695335685,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1z5aaaa7mxt5pquswefzh5ugxpk2rcemm5x7v0l",
-	  "value": {
-		"address": "zil1z5aaaa7mxt5pquswefzh5ugxpk2rcemm5x7v0l",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": "emu1"
-	  }
-	},
-	{
-	  "name": "zil1r2xf7rgmv6mw4xzavj5lmw2yu7jemwrkulexzj",
-	  "value": {
-		"address": "zil1r2xf7rgmv6mw4xzavj5lmw2yu7jemwrkulexzj",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": "emu10"
-	  }
-	},
-	{
-	  "name": "zil1hxkqqg7gan3vefsv0g4j9kcuh7dft29kfaa68v",
-	  "value": {
-		"address": "zil1hxkqqg7gan3vefsv0g4j9kcuh7dft29kfaa68v",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": "emu8"
-	  }
-	},
-	{
-	  "name": "zil1h7ednt564g7ufw5lpv2cjhpsvsvug30gppw3rt",
-	  "value": {
-		"address": "zil1h7ednt564g7ufw5lpv2cjhpsvsvug30gppw3rt",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil182s6czzdp3aa03jedf9ym5wydmrmm8q7e339ls",
-	  "value": {
-		"address": "zil182s6czzdp3aa03jedf9ym5wydmrmm8q7e339ls",
-		"count": 0,
-		"owner": "xmbyrx",
-		"chat_id": 1239581842,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1xgncqrwpxujuuefh44qeks8qw0hls3hv87933u",
-	  "value": {
-		"address": "zil1xgncqrwpxujuuefh44qeks8qw0hls3hv87933u",
-		"count": 0,
-		"owner": "ichsn",
-		"chat_id": 749040222,
-		"aliases": "emu5"
-	  }
-	},
-	{
-	  "name": "zil1qujfafxuhf6q8esfp06vq3x0zd7dz3tdwh5lc7",
-	  "value": {
-		"address": "zil1qujfafxuhf6q8esfp06vq3x0zd7dz3tdwh5lc7",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": "jakbar"
-	  }
-	},
-	{
-	  "name": "zil185hqqwtqkna049t7e8x0ncm054pdpxpkr3enmq",
-	  "value": {
-		"address": "zil185hqqwtqkna049t7e8x0ncm054pdpxpkr3enmq",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1u7s04tk9de4tcau076er99rsl4rxs8amlkanw6",
-	  "value": {
-		"address": "zil1u7s04tk9de4tcau076er99rsl4rxs8amlkanw6",
-		"count": 0,
-		"owner": "farizra",
-		"chat_id": 615522910,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil16d20drju9zhn0c3ypgf7ryvqaslakjgy77yfxs",
-	  "value": {
-		"address": "zil16d20drju9zhn0c3ypgf7ryvqaslakjgy77yfxs",
-		"count": 0,
-		"owner": "xmbyrx",
-		"chat_id": 1239581842,
 		"aliases": null
 	  }
 	},
@@ -415,12 +275,82 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1qd7equsu638quuxkpu6pl6xxjfqchtlj6aeyxu",
+	  "name": "zil1cevtkhh8rgty0ljsxt47hvrpf6t7nhg3k287r6",
 	  "value": {
-		"address": "zil1qd7equsu638quuxkpu6pl6xxjfqchtlj6aeyxu",
+		"address": "zil1cevtkhh8rgty0ljsxt47hvrpf6t7nhg3k287r6",
 		"count": 0,
-		"owner": "jinovu",
-		"chat_id": 679473103,
+		"owner": "wkrisdiyanto",
+		"chat_id": 795965625,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil16d20drju9zhn0c3ypgf7ryvqaslakjgy77yfxs",
+	  "value": {
+		"address": "zil16d20drju9zhn0c3ypgf7ryvqaslakjgy77yfxs",
+		"count": 2,
+		"owner": "xmbyrx",
+		"chat_id": 1239581842,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1anumqqegpr32fx0sh87v80xh4dgndtp2jhzm9g",
+	  "value": {
+		"address": "zil1anumqqegpr32fx0sh87v80xh4dgndtp2jhzm9g",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": "SG2"
+	  }
+	},
+	{
+	  "name": "zil185hqqwtqkna049t7e8x0ncm054pdpxpkr3enmq",
+	  "value": {
+		"address": "zil185hqqwtqkna049t7e8x0ncm054pdpxpkr3enmq",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1xgncqrwpxujuuefh44qeks8qw0hls3hv87933u",
+	  "value": {
+		"address": "zil1xgncqrwpxujuuefh44qeks8qw0hls3hv87933u",
+		"count": 0,
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu5"
+	  }
+	},
+	{
+	  "name": "zil182s6czzdp3aa03jedf9ym5wydmrmm8q7e339ls",
+	  "value": {
+		"address": "zil182s6czzdp3aa03jedf9ym5wydmrmm8q7e339ls",
+		"count": 0,
+		"owner": "xmbyrx",
+		"chat_id": 1239581842,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1u7s04tk9de4tcau076er99rsl4rxs8amlkanw6",
+	  "value": {
+		"address": "zil1u7s04tk9de4tcau076er99rsl4rxs8amlkanw6",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil165vpnsjv60d7x3gtzcc2u9yl0gfllraygdl7ry",
+	  "value": {
+		"address": "zil165vpnsjv60d7x3gtzcc2u9yl0gfllraygdl7ry",
+		"count": 0,
+		"owner": "ichsn",
+		"chat_id": 749040222,
 		"aliases": null
 	  }
 	},
@@ -445,13 +375,53 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1zkppqupdjjn2kgfqxgxpx8957su76kdwfr4sfv",
+	  "name": "zil1h7ednt564g7ufw5lpv2cjhpsvsvug30gppw3rt",
 	  "value": {
-		"address": "zil1zkppqupdjjn2kgfqxgxpx8957su76kdwfr4sfv",
-		"count": 1,
-		"owner": "xmbyrx",
-		"chat_id": 1239581842,
+		"address": "zil1h7ednt564g7ufw5lpv2cjhpsvsvug30gppw3rt",
+		"count": 0,
+		"owner": "ichsn",
+		"chat_id": 749040222,
 		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1tt8m73kt0p6har39y68q0hffd07hjljmq5fvkk",
+	  "value": {
+		"address": "zil1tt8m73kt0p6har39y68q0hffd07hjljmq5fvkk",
+		"count": 0,
+		"owner": "jinovu",
+		"chat_id": 679473103,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1r2xf7rgmv6mw4xzavj5lmw2yu7jemwrkulexzj",
+	  "value": {
+		"address": "zil1r2xf7rgmv6mw4xzavj5lmw2yu7jemwrkulexzj",
+		"count": 0,
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu10"
+	  }
+	},
+	{
+	  "name": "zil1e7mffc4cw0hp3dyzp8xnfr2ds4f6vge078kq09",
+	  "value": {
+		"address": "zil1e7mffc4cw0hp3dyzp8xnfr2ds4f6vge078kq09",
+		"count": 0,
+		"owner": "jinovu",
+		"chat_id": 679473103,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1yjc66zl7ltnjj6l4j08r9ck4k7wgmkwy2qjsm7",
+	  "value": {
+		"address": "zil1yjc66zl7ltnjj6l4j08r9ck4k7wgmkwy2qjsm7",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": "indo"
 	  }
 	},
 	{
@@ -465,23 +435,23 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1ggmqfwaup9wm8h3ns7g78cdtmulw0qpaljlqrf",
+	  "name": "zil1zjxk3rr79mzdnjype9frhc5cetna7e0y7jnnw0",
 	  "value": {
-		"address": "zil1ggmqfwaup9wm8h3ns7g78cdtmulw0qpaljlqrf",
+		"address": "zil1zjxk3rr79mzdnjype9frhc5cetna7e0y7jnnw0",
 		"count": 0,
-		"owner": "jinovu",
-		"chat_id": 679473103,
-		"aliases": null
+		"owner": "Mantan",
+		"chat_id": 993143881,
+		"aliases": "3"
 	  }
 	},
 	{
-	  "name": "zil1ecldn6228hp30qd72csn9kz7yjllad2nfury2u",
+	  "name": "zil1hxkqqg7gan3vefsv0g4j9kcuh7dft29kfaa68v",
 	  "value": {
-		"address": "zil1ecldn6228hp30qd72csn9kz7yjllad2nfury2u",
+		"address": "zil1hxkqqg7gan3vefsv0g4j9kcuh7dft29kfaa68v",
 		"count": 0,
-		"owner": "jinovu",
-		"chat_id": 679473103,
-		"aliases": null
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu8"
 	  }
 	},
 	{
@@ -508,9 +478,49 @@ const backupData = [
 	  "name": "zil16vg6ztz2d6sg5dac3sqhajsc6d458r3r3qm2uq",
 	  "value": {
 		"address": "zil16vg6ztz2d6sg5dac3sqhajsc6d458r3r3qm2uq",
+		"count": 1,
+		"owner": "jinovu",
+		"chat_id": 679473103,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1qd7equsu638quuxkpu6pl6xxjfqchtlj6aeyxu",
+	  "value": {
+		"address": "zil1qd7equsu638quuxkpu6pl6xxjfqchtlj6aeyxu",
 		"count": 0,
 		"owner": "jinovu",
 		"chat_id": 679473103,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1uv96jawamwl7h2jhxkt4v68l5temq0gz4z47r5",
+	  "value": {
+		"address": "zil1uv96jawamwl7h2jhxkt4v68l5temq0gz4z47r5",
+		"count": 0,
+		"owner": "modilaakbari",
+		"chat_id": 703469861,
+		"aliases": "modila4"
+	  }
+	},
+	{
+	  "name": "zil1qujfafxuhf6q8esfp06vq3x0zd7dz3tdwh5lc7",
+	  "value": {
+		"address": "zil1qujfafxuhf6q8esfp06vq3x0zd7dz3tdwh5lc7",
+		"count": 0,
+		"owner": "farizra",
+		"chat_id": 615522910,
+		"aliases": "jakbar"
+	  }
+	},
+	{
+	  "name": "zil1zkppqupdjjn2kgfqxgxpx8957su76kdwfr4sfv",
+	  "value": {
+		"address": "zil1zkppqupdjjn2kgfqxgxpx8957su76kdwfr4sfv",
+		"count": 1,
+		"owner": "xmbyrx",
+		"chat_id": 1239581842,
 		"aliases": null
 	  }
 	},
@@ -525,33 +535,23 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1tt8m73kt0p6har39y68q0hffd07hjljmq5fvkk",
+	  "name": "zil1tz95yg57yykd634pugngdcp328u0ezrqdgq2dt",
 	  "value": {
-		"address": "zil1tt8m73kt0p6har39y68q0hffd07hjljmq5fvkk",
+		"address": "zil1tz95yg57yykd634pugngdcp328u0ezrqdgq2dt",
 		"count": 0,
-		"owner": "jinovu",
-		"chat_id": 679473103,
-		"aliases": null
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu11"
 	  }
 	},
 	{
-	  "name": "zil1e7mffc4cw0hp3dyzp8xnfr2ds4f6vge078kq09",
+	  "name": "zil1z5aaaa7mxt5pquswefzh5ugxpk2rcemm5x7v0l",
 	  "value": {
-		"address": "zil1e7mffc4cw0hp3dyzp8xnfr2ds4f6vge078kq09",
+		"address": "zil1z5aaaa7mxt5pquswefzh5ugxpk2rcemm5x7v0l",
 		"count": 0,
-		"owner": "jinovu",
-		"chat_id": 679473103,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil10gkrwlma7jkp4caevpn32js6908ypru5305dke",
-	  "value": {
-		"address": "zil10gkrwlma7jkp4caevpn32js6908ypru5305dke",
-		"count": 0,
-		"owner": "gilarramdani",
-		"chat_id": 627796136,
-		"aliases": "yglr"
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "emu1"
 	  }
 	},
 	{
@@ -565,6 +565,16 @@ const backupData = [
 	  }
 	},
 	{
+	  "name": "zil10gkrwlma7jkp4caevpn32js6908ypru5305dke",
+	  "value": {
+		"address": "zil10gkrwlma7jkp4caevpn32js6908ypru5305dke",
+		"count": 0,
+		"owner": "gilarramdani",
+		"chat_id": 627796136,
+		"aliases": "yglr"
+	  }
+	},
+	{
 	  "name": "zil15zn23xfcr3ln6jm9m3ewrtprecet6q5a5v28ay",
 	  "value": {
 		"address": "zil15zn23xfcr3ln6jm9m3ewrtprecet6q5a5v28ay",
@@ -575,9 +585,19 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil18cmdg9gl7633qyuuxqsn7uy7a0apktar84rpsg",
+	  "name": "zil1tvegnlv2d3hnl6ne92d7qrx76t9fngjkqguuay",
 	  "value": {
-		"address": "zil18cmdg9gl7633qyuuxqsn7uy7a0apktar84rpsg",
+		"address": "zil1tvegnlv2d3hnl6ne92d7qrx76t9fngjkqguuay",
+		"count": 3,
+		"owner": "akimika9",
+		"chat_id": 1497192015,
+		"aliases": null
+	  }
+	},
+	{
+	  "name": "zil1ecldn6228hp30qd72csn9kz7yjllad2nfury2u",
+	  "value": {
+		"address": "zil1ecldn6228hp30qd72csn9kz7yjllad2nfury2u",
 		"count": 0,
 		"owner": "jinovu",
 		"chat_id": 679473103,
@@ -585,33 +605,13 @@ const backupData = [
 	  }
 	},
 	{
-	  "name": "zil1k3zhfc5zvhhmzeszgek56e9scjqugtc4jldc0m",
+	  "name": "zil1j7qu8l9pm2rvkw3fzh3qfypwh3n5jdcnlqsy2z",
 	  "value": {
-		"address": "zil1k3zhfc5zvhhmzeszgek56e9scjqugtc4jldc0m",
+		"address": "zil1j7qu8l9pm2rvkw3fzh3qfypwh3n5jdcnlqsy2z",
 		"count": 0,
-		"owner": "gilarramdani",
-		"chat_id": 627796136,
-		"aliases": null
-	  }
-	},
-	{
-	  "name": "zil1zjxk3rr79mzdnjype9frhc5cetna7e0y7jnnw0",
-	  "value": {
-		"address": "zil1zjxk3rr79mzdnjype9frhc5cetna7e0y7jnnw0",
-		"count": 0,
-		"owner": "Mantan",
-		"chat_id": 993143881,
-		"aliases": "3"
-	  }
-	},
-	{
-	  "name": "zil1zzklfsdwcryqpqj9wwknlhthxh4wt9guhs09mk",
-	  "value": {
-		"address": "zil1zzklfsdwcryqpqj9wwknlhthxh4wt9guhs09mk",
-		"count": 0,
-		"owner": "Mantan",
-		"chat_id": 993143881,
-		"aliases": "1"
+		"owner": "ichsn",
+		"chat_id": 749040222,
+		"aliases": "13"
 	  }
 	}
   ]
@@ -642,29 +642,46 @@ if (backupData.length > 0){
 
 bot.onText(/\/check/, async (msg) => {
 	let sendMsg
-    trxData.forEach(async addr => {
-		if(msg.chat.id == addr.chat_id){
-			let result = await getData(addr.address)
-			let resultJson = await result.json()
-			if(resultJson['docs'].length > 0){
-				resultJson['docs'].forEach(trx => {
-					if(addr.count < resultJson['docs'].length){
-						addr.count += 1
-						//bot.sendMessage(addr.chat_id, `[ ${addr.address} ] => GET\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
-					}
-				})
+    trxData.forEach(async (addr,i) => {
+		setTimeout(async() => {
+			if(msg.chat.id == addr.chat_id){
+				let result = await getData(addr.address)
+				let resultJson = await result.json()
+				//console.log(resultJson)
+				if(resultJson['docs'].length > 0){
+					resultJson['docs'].forEach(trx => {
+						if(addr.count < resultJson['docs'].length){
+							addr.count += 1
+							//bot.sendMessage(addr.chat_id, `[ ${addr.address} ] => GET\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
+						}
+					})
+				}
+				sendMsg = `${addr.address.substr(0,6)}...${addr.address.substr(-4)}\nDapat: ${addr.count} PORT`
+				bot.sendMessage(msg.chat.id, sendMsg, {
+					"reply_markup": {
+						"keyboard": [["/check", "/list"],  ["/help"]]
+						}
+					})
 			}
-			sendMsg = `${addr.address.substr(0,6)}...${addr.address.substr(-4)}\nDapat: ${addr.count} PORT`
-			bot.sendMessage(msg.chat.id, sendMsg)
-		}
+		}, 500*i)
 	})
 	return;
 })
 bot.onText(/\/start/, async (msg) => {
-	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual")
+	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual",
+	{
+		"reply_markup": {
+			"keyboard": [["/check", "/list"],  ["/help"]]
+			}
+		})
 })
 bot.onText(/\/help/, async (msg) => {
-	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual")
+	bot.sendMessage(msg.chat.id, "/add <address> <aliases>  | Add address\n/remove <address> | Remove address\n/list | Lihat list address\n/check | Check manual",
+	{
+		"reply_markup": {
+			"keyboard": [["/check", "/list"],  ["/help"]]
+			}
+		})
 })
 bot.onText(/\/list/, async (msg) => {
 	let sendMsg = 'All of your list:\n'
@@ -677,7 +694,11 @@ bot.onText(/\/list/, async (msg) => {
 			}
 		}
 	})
-	bot.sendMessage(msg.chat.id, sendMsg)
+	bot.sendMessage(msg.chat.id, sendMsg, {
+		"reply_markup": {
+			"keyboard": [["/check", "/list"],  ["/help"]]
+			}
+		})
 	return;
 })
 
@@ -687,8 +708,10 @@ bot.onText(/\/bckp/, async (msg) => {
 	if (array.length == 0){
 		bot.sendMessage(msg.chat.id, "no data")
 	}else{
-		array.forEach(each => {
-			bot.sendMessage(615522910, JSON.stringify(each)+",")
+		array.forEach(async (each,i) => {
+			setTimeout(async() => {
+				await bot.sendMessage(615522910, JSON.stringify(each)+",")
+			}, 1000*i)
 		})
 	}
 	
@@ -737,6 +760,10 @@ bot.onText(/\/add/, async (msg) => {
     const each = msg.text.split(" ")
 	if (each.length == 1){
 		bot.sendMessage(msg.chat.id, `/add <address> <aliases> untuk menambahkan list\naddress wajib\naliases optional`)
+		return;
+	}
+	if(each[1].length != 42){
+		bot.sendMessage(msg.chat.id, `Gagal menambahkan ${each[1].substr(0,6)}...${each[1].substr(-4)}\nAddress salah.`)
 		return;
 	}
 	if(trxData.get(each[1])){
