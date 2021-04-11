@@ -820,14 +820,14 @@ setInterval(() => {
 				port += parseInt(trx['value'])
 				if(addr.count < port){
 					addr.count += parseInt(trx['value'])
-					if(trx['value'] == "10000"){
+					if(trx['extra']['method'] == "ProxyTransferFrom"){
 						bot.sendMessage(-1001285503524, `Address ${addr.address.substr(0,6)}...${addr.address.substr(-4)} LAND. JANGAN IRI.`)
 						if (addr.aliases){
 							bot.sendMessage(addr.chat_id, `[ ${addr.aliases} ] LAND!!!!!\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
 						}else{
 							bot.sendMessage(addr.chat_id, `[ ${addr.address.substr(0,6)}...${addr.address.substr(-4)} ] LAND!!!!!\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
 						}
-					}else{
+					}else if(trx['extra']['method'] == "ProxyRecordScan"){
 						if (addr.aliases){
 							bot.sendMessage(addr.chat_id, `[ ${addr.aliases} ] Drop reward.\nHash: ${trx['hash']}\nJumlah: ${parseInt(trx['value'])/10000} PORT`)
 						}else{
