@@ -834,6 +834,13 @@ setInterval(() => {
 							bot.sendMessage(addr.chat_id, `[ ${addr.address.substr(0,6)}...${addr.address.substr(-4)} ] Drop reward.\nHash: ${trx['hash']}\nJumlah: ${parseInt(trx['value'])/10000} PORT`)
 						}
 						bot.sendMessage(-1001285503524, `Address ${addr.address.substr(0,6)}...${addr.address.substr(-4)} Drop reward.`)
+					}else{
+						if (addr.aliases){
+							bot.sendMessage(addr.chat_id, `[ ${addr.aliases} ] Unknown.\nHash: ${trx['hash']}\nJumlah: ${parseInt(trx['value'])/10000} PORT`)
+						}else{
+							bot.sendMessage(addr.chat_id, `[ ${addr.address.substr(0,6)}...${addr.address.substr(-4)} ] Unknown.\nHash: ${trx['hash']}\nJumlah: ${parseInt(trx['value'])/10000} PORT`)
+						}
+						bot.sendMessage(-1001285503524, `Address ${addr.address.substr(0,6)}...${addr.address.substr(-4)} Unknown.`)
 					}
 				}
 				console.log(`[ ${addr.address} ] ${trx['hash']} Status: ${trx['status']}`)
