@@ -626,7 +626,8 @@ const backupData = [
   }
 ]
 if (backupData.length > 0){
-	backupData.forEach(async a => {
+	console.log("Backup total: ", backupData.length )
+	backupData.forEach(async (a,i) => {
 		let result = await getData(a.name)
 		let resultJson = await result.json()
 		let port = 0
@@ -647,13 +648,15 @@ if (backupData.length > 0){
 			aliases: a['value']['aliases']
 		}
 		//console.log(addressConstructor)
-		//await trxData.set(a['name'], addressConstructor)
-		await console.log(`Backup => ${a['name']}`, `${a['value']['count']/10000} PORT`)
+		await trxData.set(a['name'], addressConstructor)
+		console.log(i, `Backup => ${a['name']} ${a['value']['count']/10000} PORT`)
+		if(backupData.length == i+1){console.log("ready")}	
 	})
 }
 
 bot.onText(/\/check/, async (msg) => {
 	let sendMsg
+	console.log("check")
     trxData.forEach(async (addr,i) => {
 		setTimeout(async() => {
 			if(msg.chat.id == addr.chat_id){
