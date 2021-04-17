@@ -107,18 +107,6 @@ if (backupData.length > 0){
 	console.log("Backup total: ", backupData.length )
 	backupData.forEach(async (a,i) => {
 		setTimeout(async () => {
-      let result = await getData(a.name)
-		let resultJson = await result.json()
-		let port = 0
-		if(resultJson['docs'].length > 0){
-			resultJson['docs'].forEach(trx => {
-				port += parseInt(trx['value'])
-				if(a.value.count < port){
-					a.value.count += parseInt(trx['value'])
-					//bot.sendMessage(addr.chat_id, `[ ${addr.address} ] => GET\nHash: ${trx['hash']}\nStatus: ${trx['status']}`)
-				}
-			})
-		}
 		let addressConstructor = {
 			address: a['name'],
 			count: a['value']['count'],
@@ -130,7 +118,7 @@ if (backupData.length > 0){
 		await trxData.set(a['name'], addressConstructor)
 		console.log(i, `Backup => ${a['name']} ${a['value']['count']/10000} PORT`)
 		if(backupData.length == i+1){console.log("ready")}	
-    },500*i)
+    },50*i)
 	})
 }
 
@@ -181,6 +169,9 @@ bot.onText(/\/help/, async (msg) => {
 			}
 		})
 })
+bot.onText(/\/ver/, async (msg) => {
+	bot.sendMessage(msg.chat.id, "v1.1")
+});
 bot.onText(/\/list/, async (msg) => {
 	let sendMsg = 'All of your list:\n'
     trxData.forEach(async addr => {
