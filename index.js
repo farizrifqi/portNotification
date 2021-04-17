@@ -106,7 +106,8 @@ const backupData = [{"name":"zil15dse7543schr8j4d7zurupy78cvrq8qkramjdw","value"
 if (backupData.length > 0){
 	console.log("Backup total: ", backupData.length )
 	backupData.forEach(async (a,i) => {
-		let result = await getData(a.name)
+		setTimeout(async () => {
+      let result = await getData(a.name)
 		let resultJson = await result.json()
 		let port = 0
 		if(resultJson['docs'].length > 0){
@@ -129,6 +130,7 @@ if (backupData.length > 0){
 		await trxData.set(a['name'], addressConstructor)
 		console.log(i, `Backup => ${a['name']} ${a['value']['count']/10000} PORT`)
 		if(backupData.length == i+1){console.log("ready")}	
+    },500*i)
 	})
 }
 
@@ -337,7 +339,6 @@ setInterval(() => {
               		bot.sendMessage(addr.chat_id, `[ ${addr.address.substr(0,6)}...${addr.address.substr(-4)} ] Drop reward.\nHash: ${trx['hash']}\nJumlah: ${parseInt(trx['value'])/10000} PORT`)
               	}
               	bot.sendMessage(-1001285503524, `Address ${addr.address.substr(0,6)}...${addr.address.substr(-4)} Drop reward.`)
-              
           }
 				}
 				console.log(`[ ${addr.address} ] ${trx['hash']} Status: ${trx['status']}`)
