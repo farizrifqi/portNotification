@@ -366,7 +366,7 @@ setInterval(() => {
 	},500*i)
 	})
 	//bot.sendMessage(-1001285503524, 'Checking...')
-}, 600000)
+}, 1800000)
 
 async function getData(addr){
 	const headers = {
