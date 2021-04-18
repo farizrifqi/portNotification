@@ -3,6 +3,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '675485146:AAHuyOpGg0QLE33IP5gaBXN8Fx_WKT2pTww';
 const bot = new TelegramBot(token, {polling: true});
 const trxData = new Map()
+const cdCheck = new Map()
 const backupData = [{"name":"zil15dse7543schr8j4d7zurupy78cvrq8qkramjdw","value":{"address":"zil15dse7543schr8j4d7zurupy78cvrq8qkramjdw","count":0,"owner":"claudiopf","chat_id":1695335685,"aliases":null}},
 {"name":"zil1dgc49y7cv6duevj0cxp782gurvx8h2xvcv65ce","value":{"address":"zil1dgc49y7cv6duevj0cxp782gurvx8h2xvcv65ce","count":0,"owner":"farizra","chat_id":615522910,"aliases":"MEXICO"}},
 {"name":"zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg","value":{"address":"zil166jnepdjwqkmgeg46chdfgpfcc2a63sysxmreg","count":0,"owner":"claudiopf","chat_id":1695335685,"aliases":null}},
@@ -121,16 +122,39 @@ if (backupData.length > 0){
     },50*i)
 	})
 }
-
+setInterval(() => {
+	cdCheck.forEach((each) => {
+		each.cd += 1000;
+	})
+}, 1000)
 bot.onText(/\/check/, async (msg) => {
 	let sendMsg
 	console.log("check")
+	let cdData = cdCheck.get(msg.chat.id);
+	if(cdData){
+		if(cdData.cd < 60000){
+			await bot.sendMessage(msg.chat.id, `Tidak dapat check manual. Cooldown. ${(60000-cdData.cd)/1000} detik.`, {
+				"reply_markup": {
+					"keyboard": [["/check", "/list"],  ["/help"]]
+					}
+				})
+			return;
+		}
+	}else{
+		let cdConstructor = {
+			chat_id: msg.chat.id,
+			username: msg.chat.username,
+			cd: 0
+		}
+		cdCheck.set(msg.chat.id, cdConstructor)
+		cdData = cdCheck.get(msg.chat.id);
+	}
     trxData.forEach(async (addr,i) => {
 		setTimeout(async() => {
 			if(msg.chat.id == addr.chat_id){
 				let result = await getData(addr.address)
 				let resultJson = await result.json()
-				//console.log(resultJson)
+				console.log(resultJson)
 				//console.log(resultJson['docs'].length)
 				let port = 0
 				if(resultJson['docs'].length > 0){
@@ -151,6 +175,7 @@ bot.onText(/\/check/, async (msg) => {
 			}
 		}, 550*i)
 	})
+	cdData.cd = 0;
 	return;
 })
 bot.onText(/\/start/, async (msg) => {
@@ -285,7 +310,8 @@ bot.onText(/\/add/, async (msg) => {
 })
 
 setInterval(() => {
-	trxData.forEach(async addr => {
+	trxData.forEach(async (addr,i) => {
+		setTimeout(async() => {
 		let result = await getData(addr.address)
 		let resultJson = await result.json()
 		if(resultJson['docs'].length > 0){
@@ -337,6 +363,7 @@ setInterval(() => {
 		}else{
 			console.log(`[ ${addr.address} ] had no trx`)
 		}
+	},500*i)
 	})
 	//bot.sendMessage(-1001285503524, 'Checking...')
 }, 600000)
